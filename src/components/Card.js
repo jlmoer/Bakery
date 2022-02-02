@@ -5,13 +5,13 @@ class Card extends React.Component {
     constructor() {
         super();
         this.state = {
-            image: './public/images/item.png'
+            image: 'http://localhost:3000/images/item.png'
         }
     }
 
     render() {
         return (
-            <div class="card" style="width: 18rem;" onClick={ }>
+            <div class="card" style={{ width: "18rem" }} onClick={this.props.onClick}>
                 <img src={this.state.image} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{this.props.productName}</h5>
